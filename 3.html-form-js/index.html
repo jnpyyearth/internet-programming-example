@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Registration Form</title>
+</head>
+
+<body>
+    <h2>Registration Form</h2>
+
+    <form method="post" onsubmit="submitform()">
+        <label for="fname">First Name:</label><br>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="lname">Last Name:</label><br>
+        <input type="text" id="lname" name="lname"><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br>
+        <label for="pwd"> Password:</label><br>
+        <input type="password" id="pwd" name="pwd"><br>
+        <label for="pwd-rechec">Re-enter Password:</label><br>
+        <input type="password" id="pwd-recheck" name="pwd-recheck"><br>
+        <input type="checkbox" name="terms-check" id="terms-check">
+        <label for="terms-check">I accept terms and conditions</label><br/>
+        <div id="errorMsg"></div>
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+
+</html>

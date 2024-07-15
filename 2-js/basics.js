@@ -153,7 +153,6 @@ console.log('Is Mark\'s BMI higher than John\'s? ' + markHigherBMI);
 */
 
 
-
 /*****************************
 * If / else statements
 */
