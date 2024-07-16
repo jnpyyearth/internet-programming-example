@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Registration Form</title>
+    <style>
+        .error {
+            color: red;
+        }
+
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Registration Form</h2>
+    <form id="registrationForm">
+        <div>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+        <div>
+            <label for="country">Country:</label>
+            <select id="country" name="country">
+                <option value="">Select Country</option>
+                <option value="USA">United States</option>
+                <option value="Canada">Canada</option>
+                <option value="UK">United Kingdom</option>
+            </select>
+        </div>
+        <div id="stateContainer" class="hidden">
+            <label for="state">State/Province:</label>
+            <select id="state" name="state"></select>
+        </div>
+        <div>
+            <label for="interests">Interests:</label>
+            <div id="interestsContainer">
+                <input type="checkbox" name="interests" value="technology"> Technology
+                <input type="checkbox" name="interests" value="sports"> Sports
+                <input type="checkbox" name="interests" value="music"> Music
+            </div>
+            <button type="button" id="addInterest">Add Interest</button>
+        </div>
+        <div>
+            <button type="submit">Register</button>
+        </div>
+    </form>
+    <div id="errorMessages" class="error"></div>
+    <div id="successMessage" class="hidden">Registration successful!</div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
