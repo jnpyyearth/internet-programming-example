@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <form method="post" action="" id="order-form">
+        <h2>Pizza Order Form</h2>
+
+        <label for="size">Pizza Size:</label><br>
+        <input type="radio" id="size-m" name="size" checked value="m">
+        <label for="size-m">M (200 THB)</label><br>
+        <input type="radio" id="size-l" name="size" value="l">
+        <label for="size-l">L (300 THB)</label><br><br>
+
+        <label for="toppings">Toppings:</label><br>
+        <input type="checkbox" id="topping-sausage" name="toppings" value="sausage">
+        <label for="topping-sausage">Sausage (30 THB/50 THB)</label><br>
+        <input type="checkbox" id="topping-bacon" name="toppings" value="bacon">
+        <label for="topping-bacon">Bacon (30 THB/50 THB)</label><br>
+        <input type="checkbox" id="topping-hawaiian" name="toppings" value="hawaiian">
+        <label for="topping-hawaiian">Hawaiian (30 THB/50 THB)</label><br>
+        <input type="checkbox" id="topping-thai" name="toppings" value="thai">
+        <label for="topping-thai">Thai (30 THB/50 THB)</label><br>
+        <input type="checkbox" id="topping-italian" name="toppings" value="italian">
+        <label for="topping-italian">Italian (30 THB/50 THB)</label><br><br>
+
+        <label for="crust">Crust Type:</label><br>
+        <select id="crust" name="crust">
+            <option value="thin">Thin</option>
+            <option value="crispy">Crispy</option>
+            <option value="puff">Puff</option>
+        </select><br><br>
+
+        <label for="quantity">Quantity:</label><br>
+        <input type="number" id="quantity" name="quantity" min="1" value="1"><br><br>
+
+        <input type="submit" value="Place Order">
+    </form>
+
+    <script src="pizza.js" type="text/javascript"></script>
+</body>
+
+</html>
