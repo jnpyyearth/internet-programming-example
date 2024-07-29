@@ -1,0 +1,25 @@
+<form>
+    <div>
+      <label for="pizzaSize">Pizza Size:</label>
+      <select id="pizzaSize" name="pizzaSize" [(ngModel)]="pizzaSize">
+        <option value="s">Small</option>
+        <option value="m">Medium</option>
+        <option value="l">Large</option>
+      </select>
+    </div>
+  
+    <div>
+      <label for="toppings">Toppings:</label>
+      <div *ngFor="let topping of toppings">
+        <input type="checkbox" [id]="topping" name="toppings" [value]="topping" [(ngModel)]="selectedToppings"/>
+        <label [for]="topping">{{ topping }}</label>
+      </div>
+    </div>
+  
+    <div>
+      <label for="quantity">Quantity:</label>
+      <input type="text" id="Quantity" name="Quantity" [(ngModel)]="quantity">
+    </div>
+  
+    <button type="submit" (click)="placeOrder()">Place Order</button>
+  </form>
