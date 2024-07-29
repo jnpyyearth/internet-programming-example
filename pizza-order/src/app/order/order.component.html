@@ -11,7 +11,7 @@
     <div>
       <label for="toppings">Toppings:</label>
       <div *ngFor="let topping of toppings">
-        <input type="checkbox" [id]="topping" name="toppings" [value]="topping" [(ngModel)]="selectedToppings"/>
+        <input type="checkbox" [id]="topping" [name]="topping" [value]="topping" [(ngModel)]="selectedToppings"/>
         <label [for]="topping">{{ topping }}</label>
       </div>
     </div>
