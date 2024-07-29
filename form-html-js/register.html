@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Registration Form</h1>
+    <form method="post" id="registerForm" action="register.php">
+        <label for="firstname">First name:</label><br />
+        <input type="text" name="firstname" required /><br />
+        <label for="lastname">Last name:</label><br />
+        <input type="text" name="lastname" /><br />
+        <label>Email:</label><br />
+        <input type="email" name="email"/><br />
+        <label for="password">Password</label><br />
+        <input type="password" name="password" /><br />
+        <label for="repassword">Re-enter Password:</label><br />
+        <input type="password" name="repassword" /><br />
+
+        <input type="checkbox" name="termscheckbox" value="termschecked"/>
+        <label for="termscheckbox">I accept terms and conditions.</label> <br />
+
+        <input type="submit">
+    </form>
+
+    <script src="register.js" type="text/javascript"></script>
+</body>
+
+</html>
