@@ -5,6 +5,8 @@ export interface Student {
   id: number;
   name: string;
   age: number;
+  gender: string;
+  major: string;
 }
 
 @Injectable({
@@ -12,8 +14,8 @@ export interface Student {
 })
 export class StudentService {
   private students: Student[] = [
-    { id: 1, name: 'John Doe', age: 20 },
-    { id: 2, name: 'Jane Smith', age: 22 },
+    { id: 1, name: 'John Doe', age: 20, gender: 'male', major: 'ENVI' },
+    { id: 2, name: 'Jane Smith', age: 22, gender: 'female', major: 'IT'},
   ];
 
   private studentsSubject = new BehaviorSubject<Student[]>(this.students);

@@ -8,7 +8,7 @@ import { Student, StudentService } from '../student.service';
 })
 export class StudentListComponent implements OnInit {
   students: Student[] = [];
-
+  
   constructor(private studentService: StudentService) {}
 
   ngOnInit() {
@@ -16,4 +16,5 @@ export class StudentListComponent implements OnInit {
       this.students = students;
     });
   }
+
 }
