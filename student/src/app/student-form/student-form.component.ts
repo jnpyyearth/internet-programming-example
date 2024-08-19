@@ -19,4 +19,5 @@ export class StudentFormComponent implements OnInit {
       this.newStudent = { id: 0, name: '', age: 0, gender: '', major: '' };
     }
   }
+  
 }

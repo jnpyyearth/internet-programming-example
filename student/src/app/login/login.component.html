@@ -1,0 +1,12 @@
+<form (ngSubmit)="onSubmit()" #myForm="ngForm">
+    <div class="mb-3">
+        <label for="email" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="email" name="email" [(ngModel)]="email" required email
+            #emailInput="ngModel">
+        <div *ngIf="emailInput.invalid && (emailInput.dirty || emailInput.touched)" class="alert alert-danger mt-2">
+            <div *ngIf="emailInput.errors?.['required']">Email is required.</div>
+            <div *ngIf="emailInput.errors?.['email']">Invalid email format.</div>
+        </div>
+    </div>
+    <button type="submit" class="btn btn-primary" [disabled]="!myForm.form.valid">Submit</button>
+</form>
